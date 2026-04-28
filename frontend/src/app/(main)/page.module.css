@@ -1,0 +1,38 @@
+.page{padding-top:40px;padding-bottom:60px;}
+.hero{text-align:center;padding:60px 0 48px;}
+.heroBadge{display:inline-flex;align-items:center;gap:6px;padding:6px 14px;background:rgba(124,58,237,0.15);border:1px solid rgba(124,58,237,0.3);border-radius:var(--radius-full);color:var(--purple-400);font-size:12px;font-weight:600;letter-spacing:0.05em;text-transform:uppercase;margin-bottom:20px;animation:borderPulse 3s infinite;}
+.heroTitle{font-size:clamp(36px,6vw,68px);font-weight:800;letter-spacing:-0.04em;line-height:1.05;color:white;margin-bottom:16px;}
+.heroSub{font-size:16px;color:rgba(255,255,255,0.45);margin-bottom:28px;}
+.heroActions{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;}
+.storiesSection{margin-bottom:48px;}
+.storiesRow{display:flex;gap:20px;overflow-x:auto;padding:8px 4px 16px;scrollbar-width:none;}
+.storiesRow::-webkit-scrollbar{display:none;}
+.storyItem{display:flex;flex-direction:column;align-items:center;gap:8px;flex-shrink:0;position:relative;text-decoration:none;transition:transform var(--transition-base);}
+.storyItem:hover{transform:translateY(-4px);}
+.storyRing{width:68px;height:68px;border-radius:50%;padding:2.5px;display:flex;align-items:center;justify-content:center;}
+.storyAvatar{width:100%;height:100%;border-radius:50%;background:var(--bg-secondary);display:flex;align-items:center;justify-content:center;border:2.5px solid var(--bg-primary);}
+.storyEmoji{font-size:26px;}
+.storyLabel{font-size:11px;font-weight:600;color:rgba(255,255,255,0.7);white-space:nowrap;max-width:68px;overflow:hidden;text-overflow:ellipsis;text-align:center;}
+.storyActiveDot{position:absolute;top:4px;right:4px;width:10px;height:10px;background:var(--green-400);border-radius:50%;border:2px solid var(--bg-primary);animation:ping 2s infinite;}
+.feedSection{}
+.loadingGrid{display:flex;flex-direction:column;gap:20px;}
+.skeleton{height:300px;animation:pulse 1.5s infinite;}
+.emptyState{text-align:center;padding:80px 20px;display:flex;flex-direction:column;align-items:center;gap:12px;}
+.emptyState h3{font-size:20px;font-weight:700;color:rgba(255,255,255,0.5);}
+.emptyState p{font-size:14px;color:rgba(255,255,255,0.3);}
+.feed{display:flex;flex-direction:column;gap:20px;}
+.card{overflow:hidden;padding:0;}
+.cardStripe{height:3px;width:100%;}
+.cardHeader{display:flex;align-items:center;justify-content:space-between;padding:18px 20px 0;}
+.cardUser{display:flex;align-items:center;gap:12px;}
+.userAvatar{width:44px;height:44px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:14px;font-weight:700;color:white;flex-shrink:0;overflow:hidden;}
+.userName{font-size:15px;font-weight:700;color:white;}
+.userMeta{display:flex;align-items:center;gap:6px;margin-top:2px;}
+.cardBody{padding:14px 20px;}
+.projectTitle{font-size:20px;font-weight:800;color:white;margin-bottom:8px;letter-spacing:-0.02em;}
+.projectDesc{font-size:14px;color:rgba(255,255,255,0.55);line-height:1.7;margin-bottom:14px;}
+.cardFooter{display:flex;align-items:center;justify-content:space-between;padding:12px 20px;border-top:var(--border-subtle);}
+.actionBtn{display:flex;align-items:center;gap:6px;padding:6px 12px;background:transparent;border:none;border-radius:var(--radius-full);color:rgba(255,255,255,0.4);font-family:var(--font-family);font-size:13px;font-weight:600;cursor:pointer;transition:all var(--transition-base);}
+.actionBtn:hover{background:rgba(255,255,255,0.06);color:rgba(255,255,255,0.8);}
+.liked{color:#f472b6!important;}
+@media(max-width:768px){.hero{padding:40px 0 32px;}.heroActions{flex-direction:column;align-items:stretch;}.heroActions a{justify-content:center;}}

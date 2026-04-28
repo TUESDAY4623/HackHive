@@ -1,0 +1,12 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "version": 2,
+  "name": "hackhive-frontend",
+  "framework": "nextjs",
+  "buildCommand": "next build",
+  "outputDirectory": ".next",
+  "env": {
+    "NEXT_PUBLIC_API_URL": "@hackhive_api_url",
+    "NEXT_PUBLIC_SOCKET_URL": "@hackhive_socket_url"
+  }
+}
